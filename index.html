@@ -247,7 +247,7 @@ h1,h2,h3{font-family:"Gabarito",sans-serif;font-weight:600;letter-spacing:-.01em
 @media(max-width:760px){
   .shell{grid-template-columns:1fr}
   .rail{display:none}
-  .main{padding:26px 18px 110px}
+  .main{padding:calc(26px + env(safe-area-inset-top)) 18px 110px}
   .notes-layout{grid-template-columns:1fr}
   .note-editor{min-height:340px}
   .time-big{font-size:46px}
