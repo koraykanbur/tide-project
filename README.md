@@ -11,7 +11,9 @@ A single-file productivity app: to-do list, calendar, notes, and a focus timer �
 
 ## Structure
 
-The entire app lives in `index.html` — HTML, CSS, and vanilla JS, no build step and no dependencies.
+The app itself lives entirely in `index.html` (HTML, CSS, vanilla JS, no build step).
+Also included: `manifest.json` and icon PNGs so the app gets a proper icon and name when
+added to a phone home screen (Add to Home Screen / PWA install).
 
 ## Run locally
 
@@ -30,5 +32,6 @@ artifact storage API. There is no backend — for cross-device sync you would ne
 
 ## Deploy
 
-It's a static site — drag the folder into Netlify, or deploy via Vercel/Cloudflare Pages.
-No build command; output directory is the project root.
+Static site — drag the folder into Netlify, or deploy via Vercel/Cloudflare Pages/GitHub Pages.
+No build command; output directory is the project root. Keep `index.html`, `manifest.json`,
+and the icon PNGs all at the root level (not nested) so the icon links resolve correctly.
