@@ -103,7 +103,7 @@ h1,h2,h3{font-family:"Gabarito",sans-serif;font-weight:600;letter-spacing:-.01em
 
 /* ---------- week strip ---------- */
 .week-strip{display:grid;grid-template-columns:repeat(7,1fr);overflow:hidden}
-.wk-day{border-left:1px solid var(--line);padding:9px 5px 8px;min-height:96px;display:flex;flex-direction:column;gap:5px}
+.wk-day{border-left:1px solid var(--line);padding:9px 5px 8px;min-height:96px;display:flex;flex-direction:column;gap:5px;min-width:0}
 .wk-day:first-child{border-left:none}
 .wk-head{text-align:center;cursor:pointer;border-radius:8px;padding:2px 0}
 .wk-head:hover{background:var(--accent-soft)}
@@ -112,7 +112,7 @@ h1,h2,h3{font-family:"Gabarito",sans-serif;font-weight:600;letter-spacing:-.01em
 .wk-day.is-today .wk-num{background:var(--accent);color:#fff}
 .wk-item{
   font-size:10.5px;font-weight:600;border-radius:6px;padding:2.5px 6px;text-align:left;
-  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;max-width:100%;
 }
 .wk-item.ev{background:var(--accent-soft);color:var(--accent-ink)}
 .wk-item.tk{background:rgba(185,126,31,.13);color:var(--amber);cursor:grab;touch-action:none}
